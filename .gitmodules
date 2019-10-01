@@ -1,0 +1,9 @@
+[submodule "orbp2p"]
+	path = orbp2p
+	url = https://github.com/HadiModarres/OrbP2P.git
+[submodule "stats_server"]
+	path = stats_server
+	url = https://github.com/HadiModarres/UnionP2PStats.git
+[submodule "graph"]
+	path = graph
+	url = https://github.com/HadiModarres/unionp2p-graph.git
