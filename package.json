@@ -1,0 +1,20 @@
+{
+  "name": "OrbP2P-Analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HadiModarres/OrbP2P-Analysis.git"
+  },
+  "keywords": [],
+  "author": "Hadi Modarres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HadiModarres/OrbP2P-Analysis/issues"
+  },
+  "homepage": "https://github.com/HadiModarres/OrbP2P-Analysis#readme"
+}
