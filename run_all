@@ -1,0 +1,4 @@
+(cd signalling_server/cyclon && sh node_modules/.bin/cyclon-signalling-server 12345)&
+(cd signalling_server/cyclon && sh node_modules/.bin/cyclon-signalling-server 12346)&
+(cd graph && npm run start) &
+(cd stats_server && npm run start) &

@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "submodules": "",
+    "test": "sh signalling",
     "signalling": "(cd signalling_server/cyclon && sh node_modules/.bin/cyclon-signalling-server 12345)& (cd signalling_server/cyclon && sh node_modules/.bin/cyclon-signalling-server 12346) &",
-    "start": "(npm run signalling)&(cd signalling_server && sh ./cyclon/node_modules/.bin/cyclon-signalling-server 12345) & (cd graph && npm run start) & (cd stats_server && npm run start) & ",
-    "node":"(cd orbp2p && google-chrome index.html)&",
-    "stop": "pkill node"
+    "start": "(sh run_all)&",
+    "stop": "(pkill firefox)&(pkill node)",
+    "nodes": "./open.sh orbp2p/index.html"
   },
   "repository": {
     "type": "git",
