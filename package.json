@@ -4,12 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "submodules": "",
-    "test": "sh signalling",
-    "signalling": "(cd signalling_server/cyclon && sh node_modules/.bin/cyclon-signalling-server 12345)& (cd signalling_server/cyclon && sh node_modules/.bin/cyclon-signalling-server 12346) &",
     "start": "(sh run_all)&",
     "stop": "(pkill firefox)&(pkill node)",
-    "nodes": "./open.sh orbp2p/index.html"
+    "nodes": "./open.sh orbp2p/index.html",
+    "build": "(cd orbp2p && npm run build)& "
   },
   "repository": {
     "type": "git",
