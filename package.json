@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "submodules": "",
+    "signalling": "(cd signalling_server/cyclon && sh node_modules/.bin/cyclon-signalling-server 12345)& (cd signalling_server/cyclon && sh node_modules/.bin/cyclon-signalling-server 12346) &",
+    "start": "(npm run signalling)&(cd signalling_server && sh ./cyclon/node_modules/.bin/cyclon-signalling-server 12345) & (cd graph && npm run start) & (cd stats_server && npm run start) & ",
+    "node":"(cd orbp2p && google-chrome index.html)&",
+    "stop": "pkill node"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/HadiModarres/OrbP2P-Analysis/issues"
   },
-  "homepage": "https://github.com/HadiModarres/OrbP2P-Analysis#readme"
+  "homepage": "https://github.com/HadiModarres/OrbP2P-Analysis#readme",
+  "dependencies": {
+    "path": "^0.12.7"
+  }
 }
