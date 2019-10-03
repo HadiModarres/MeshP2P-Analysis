@@ -1,3 +1,3 @@
 (cd graph && npm install) &&
-(cd orbp2p && npm install) &&
+(cd orbp2p && npm install && npm run build) &&
 (cd stats_server && npm install)
