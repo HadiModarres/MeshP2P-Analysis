@@ -1,0 +1,3 @@
+(cd graph && npm install) &&
+(cd orbp2p && npm install) &&
+(cd stats_server && npm install)

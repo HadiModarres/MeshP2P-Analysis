@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "(sh run_all)&",
+    "install_all": "sh install_all",
     "stop": "(pkill firefox)&(pkill node)",
     "nodes": "./open.sh orbp2p/index.html",
     "build": "(cd orbp2p && npm run build)& "
