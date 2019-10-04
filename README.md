@@ -53,7 +53,7 @@ Hints:
     * Ubuntu + XFCE + Firefox
     * Ubuntu + Plasma KDE + Chrome or Firefox
     
-## Running Nodes
+## Stopping servers and closing browser windows
 Stopping all servers and closing all browser windows: 
 ```
 pkill node && pkill firefox 
